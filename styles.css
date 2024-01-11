@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-image img {
+    /* image1 will be adjusted to top */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;/*Covering the viewport*/
+    object-position: top;/*Positioning the image to top*/
+}
+
+.bottom-image img {
+    /*Image2 will be adjusted to the bottom */
+    width: 100%;
+    height: 400px;
+    object-fit:cover; /*Covering the viewport*/
+    object-position: bottom;/*Positioning the image to top*/
+}
+
+.specific-size img {
+    width: 600px;
+    height: 400px;
+    object-fit: fill; /* Displays the whole image without cropping/stretching */
+}
+
+.fixed-size-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    text-align: center; /*Aligns the content to center*/
+    padding: 0%;
+}
+div {
+    margin: 10px;
+    margin-top: 40px;
+    border: 2px solid black;
+    padding: 0px;
+}
